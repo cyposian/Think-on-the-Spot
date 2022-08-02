@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'digital';
+    src: local('digital'),
+        url('../fonts/digital-7.ttf') format("truetype");
+}
+header {
+    color: #5680e9;
+}
+body {
+    background-color: #c1c8e4;
+    min-width: 150px; /* is this useful.. */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    text-align: center;
+}
+#timer {
+    font-family: digital;
+    font-size: 15em;
+    color: #84Ceeb;
+}
+#wordContainer {
+    display: flex;
+    color: #8860d0;
+    font-size: 2.5em;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 430px) {
+    #timer {
+        font-size: 5rem;
+    }
+    #wordContainer {
+        font-size: 1.25em;
+        gap: 1.4em;
+    }
+}
+
+
+/* #5ab9ea
+#c1c8e4 */

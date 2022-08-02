@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Think on the Spot</title>
+        <meta charset="UTF-8"/> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"/> 
+        <meta name="description" content="Think on the Spot is a website for improving language fluency, quick thinking, and creativity. Given five random words and minimal prep time, weave and orate a coherent story."/>
+		<meta name="keywords" content="Think on the Spot, language, fluency, thinking, creativity"/>
+		<meta name="distribution" content="global"/>
+		<meta name="author" content="cyposian"/>
+		<meta http-equiv="content-language" content="en"/>
+        
+        <link rel="stylesheet" href="{% static '/main/index.css' %}"/>
+        <script src="{% static '/main/index.js' %}"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Think on the Spot</h1>
+        </header>
+        <div class="content">
+            <div id="timer"></div>
+            <div id="wordContainer">
+                <div class="word">apple</div>
+                <div class="word">teacher</div>
+                <div class="word">bear</div>
+                <div class="word">procrastination</div>
+                <div class="word">ineligible</div>
+            </div>
+            <button onclick="startTimer()">Start</button>
+        </div>
+    </body>
+</html>
